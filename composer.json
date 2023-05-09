@@ -6,12 +6,13 @@
     "homepage": "https://github.com/SimformSolutionsPvtLtd/PasswordStrengthBundle",
     "require": {
         "php": ">=8.1",
-        "symfony/validator": ">=6.1.0"
+        "symfony/validator": ">=6.2.10",
+        "symfony/http-kernel": ">=6.2.10"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Simformsolutions\\PasswordStrengthBundle\\": "src/"
+            "Simformsolutions\\PasswordStrengthBundle\\": ""
         }
     },
     "authors": [
@@ -19,7 +20,11 @@
             "name": "SimformSolutionsPvtLtd"
         },
         {
-            "name": "Bhavin Nakrani"
+            "name": "Bhavin Nakrani",
+            "email": "bhavin.n@simformsolutions.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.1"
+    }
 }
