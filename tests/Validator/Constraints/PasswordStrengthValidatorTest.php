@@ -5,6 +5,7 @@ namespace Simformsolutions\PasswordStrengthBundle\tests\Validator\Constraints;
 use PHPUnit\Framework\TestCase;
 use Simformsolutions\PasswordStrengthBundle\Validator\Constraints as SPVC;
 use Symfony\Component\Validator\Context\ExecutionContext;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 class PasswordStrengthValidatorTest extends TestCase
 {
@@ -13,8 +14,7 @@ class PasswordStrengthValidatorTest extends TestCase
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
 
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\Context\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())
@@ -41,8 +41,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())
@@ -58,8 +57,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -73,8 +71,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -88,8 +85,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())
@@ -104,8 +100,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())
@@ -120,8 +115,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -135,8 +129,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -150,8 +143,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())
@@ -166,8 +158,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -183,8 +174,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -200,8 +190,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->at(0))
@@ -235,8 +224,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->never())
@@ -253,8 +241,7 @@ class PasswordStrengthValidatorTest extends TestCase
     {
         $constraint = new SPVC\PasswordStrength;
         $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContext::class)->getMock();
-        //$mockContext = $this->getMock('Symfony\Component\Validator\ExecutionContext', array(), array(), '', false);
+        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
         $validator->initialize($mockContext);
 
         $mockContext->expects($this->once())

@@ -1,18 +1,24 @@
 {
     "name": "simformsolutions/password-strength-bundle",
-    "description": "Provides a password strength validator for Symfony application",
+    "description": "Provides a password strength validator for Symfony 6 application",
     "type": "symfony-bundle",
+    "version": "0.1.0",
     "keywords": ["simform", "symfony", "password", "strength", "bundle"],
     "homepage": "https://github.com/SimformSolutionsPvtLtd/PasswordStrengthBundle",
     "require": {
         "php": ">=8.1",
-        "symfony/validator": ">=6.2.10",
-        "symfony/http-kernel": ">=6.2.10"
+        "symfony/validator": ">=6.2",
+        "symfony/http-kernel": ">=6.2"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Simformsolutions\\PasswordStrengthBundle\\": ""
+            "Simformsolutions\\PasswordStrengthBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Simformsolutions\\PasswordStrengthBundle\\Tests": "tests/"
         }
     },
     "authors": [
