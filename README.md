@@ -57,7 +57,7 @@ and then add the ```PasswordStrength``` validator to the relevant field:
 
 ``` php
 /**
- * @BAssert\PasswordStrength(minLength=7, requireNumbers=true)
+ * @PasswordAssert\PasswordStrength(minLength=7, requireNumbers=true)
  */
 protected $password;
 ```
