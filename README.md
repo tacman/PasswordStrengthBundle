@@ -1,14 +1,9 @@
 PasswordStrengthBundle
 =============================
 
-This bundle provides a validator for ensuring strong passwords in Symfony6 applications.
+The PasswordStrengthBundle offers a validator that guarantees strong passwords in Symfony6 applications. 
 
-Validations provided include:
-
-- minimum length
-- contains alphabetic and/or numeric characters
-- contains mixed case characters
-- contains "special" characters (unicode characters in the Control, Mark, Punctuation, Symbol, and Separator classes)
+This bundle includes a variety of validations, such as minimum length, the inclusion of alphabetic and/or numeric characters, the use of mixed-case characters, and the use of "special" characters (unicode characters in the Control, Mark, Punctuation, Symbol, and Separator classes).
 
 ## Documentation
 
