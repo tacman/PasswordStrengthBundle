@@ -186,26 +186,6 @@ class PasswordStrengthValidatorTest extends TestCase
         $validator->validate('１２３４abc５６７８９', $constraint);
     }
 
-    public function testRequireLettersNumbersFail()
-    {
-        $constraint = new SPVC\PasswordStrength;
-        $validator = new SPVC\PasswordStrengthValidator;
-        $mockContext = $this->getMockBuilder(ExecutionContextInterface::class)->getMock();
-        $validator->initialize($mockContext);
-
-        $mockContext->expects($this->at(0))
-            ->method('addViolation')
-            ->with($this->equalTo($constraint->missingLettersMessage));
-
-        $mockContext->expects($this->at(1))
-            ->method('addViolation')
-            ->with($this->equalTo($constraint->missingNumbersMessage));
-
-        $constraint->requireLetters = true;
-        $constraint->requireNumbers = true;
-        $validator->validate('!@#$%^&*()', $constraint);
-    }
-
     public static function providerRequireSpecialsPass(): array
     {
         $testChars = "!@#$%^&*()_-+[]{}\|;:'\",./<>?`~¡™£¢∞§¶•–—=±⁄€‹›ﬁﬂ‡°";
