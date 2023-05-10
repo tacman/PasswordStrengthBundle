@@ -8,7 +8,7 @@ Add the following in your composer.json:
 ``` json
 {
     "require": {
-        "simformsolutions/password-strength-bundle": "^1.0"
+        "simformsolutions/password-strength-bundle": ">=0.1"
     }
 }
 ```
@@ -21,17 +21,14 @@ composer require simformsolutions/password-strength-bundle
 
 ### Initialize the bundle
 
-To start using the bundle, register the bundle in your application's kernel class:
+This bundle is already Symfony 6 compatible and support flex structure. So below class is auto registered. If it is not exist then please add following code.
 
 ``` php
-// app/AppKernel.php
-public function registerBundles()
-{
-    $bundles = array(
+// config/bundles.php
+return [
         // ...
-        new Simformsolutions\PasswordStrengthBundle(),
-    );
-)
+        Simformsolutions\PasswordStrengthBundle\SimformsolutionsPasswordStrengthBundle::class => ['all' => true],
+    ];
 ```
 
 ## Usage
@@ -61,8 +58,8 @@ Default options include:
 
 You can customize the validation error messages:
 
-- tooShortMessage = _'Your password must be at least {{length}} characters long.'_
-- missingLettersMessage = _'Your password must include at least one letter.'_
-- requireCaseDiffMessage = _'Your password must include both upper and lower case letters.'_
-- missingNumbersMessage = _'Your password must include at least one number.'_
-- missingSpecialsMessage = _'Your password must include at least one special character.'_
+- tooShortMessage = _'Password must be at least {{length}} characters long.'_
+- missingLettersMessage = _'Password must include at least one letter.'_
+- requireCaseDiffMessage = _'Password must include both upper and lower case letters.'_
+- missingNumbersMessage = _'Password must include at least one number.'_
+- missingSpecialsMessage = _'Password must include at least one special character.'_
