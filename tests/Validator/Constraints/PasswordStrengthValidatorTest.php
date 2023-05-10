@@ -24,7 +24,7 @@ class PasswordStrengthValidatorTest extends TestCase
         $validator->validate('test', $constraint);
     }
 
-    public function providerTooShortMultiBytes()
+    public static function providerTooShortMultiBytes(): array
     {
         return array(
             array('１２３４'),
@@ -206,7 +206,7 @@ class PasswordStrengthValidatorTest extends TestCase
         $validator->validate('!@#$%^&*()', $constraint);
     }
 
-    public function providerRequireSpecialsPass()
+    public static function providerRequireSpecialsPass(): array
     {
         $testChars = "!@#$%^&*()_-+[]{}\|;:'\",./<>?`~¡™£¢∞§¶•–—=±⁄€‹›ﬁﬂ‡°";
 
