@@ -6,6 +6,7 @@ use Symfony\Component\Validator\Constraint;
 
 /**
  * @Annotation
+ *
  * @Target({"CLASS", "ANNOTATION"})
  */
 #[\Attribute(\Attribute::TARGET_CLASS | \Attribute::TARGET_PROPERTY | \Attribute::IS_REPEATABLE)]
