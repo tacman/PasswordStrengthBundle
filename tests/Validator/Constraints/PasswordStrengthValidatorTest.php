@@ -191,8 +191,9 @@ class PasswordStrengthValidatorTest extends TestCase
         $testChars = "!@#$%^&*()_-+[]{}\|;:'\",./<>?`~¡™£¢∞§¶•–—=±⁄€‹›ﬁﬂ‡°";
 
         $arr = array();
-        foreach(preg_split('/(?<!^)(?!$)/u', $testChars) as $ch)
+        foreach (preg_split('/(?<!^)(?!$)/u', $testChars) as $ch) {
             $arr[] = array($ch);
+        }
 
         return $arr;
     }
